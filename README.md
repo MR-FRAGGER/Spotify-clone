@@ -1,1 +1,1 @@
-for a demo visit : https://spotifyclonehome.netlify.app/
+for a preview visit : https://spotifyclonehome.netlify.app/
