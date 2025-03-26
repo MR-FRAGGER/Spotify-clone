@@ -1,0 +1,140 @@
+/* Responsive Design for Tablets and Mobiles */
+
+/* General Reset for Small Screens */
+body {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Media Query for Tablets (768px to 1024px) */
+@media screen and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .main-logo {
+    width: 10%;
+    margin: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .item1,
+  .item2 {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .search {
+    width: 90%;
+  }
+
+  .login {
+    width: 20%;
+  }
+
+  .main-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .container-left {
+    height: auto;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-size: 9px;
+  }
+}
+
+/* Media Query for Mobile Devices (max-width: 767px) */
+@media screen and (max-width: 767px) {
+  header {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .main-logo > img {
+    height: 40%;
+  }
+
+  .item1,
+  .item2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .search {
+    width: 95%;
+    height: 40px;
+  }
+
+  .placeholder {
+    font-size: 14px;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container-left,
+  .create-playlist,
+  .browse-podcasts {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    font-size: 8px;
+  }
+
+  .language {
+    width: 50%;
+  }
+
+  .sign-up {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .sign_up {
+    width: 50%;
+    padding: 5px;
+  }
+
+  .iframe-container-right {
+    width: 100%;
+  }
+
+  .popular-artists,
+  .popular-albums {
+    width: 100%;
+  }
+
+  .artist > img,
+  .album > img {
+    width: 120px;
+    height: 120px;
+  }
+}
